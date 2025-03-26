@@ -61,21 +61,21 @@ export default function Home({params}) {
       headings: "extreme website",
       link: "https://extreme-tau.vercel.app/",
       one: "HTML",
-      two: "The backbone of web pages, providing structure and content.",
+      two: "Extreme Computers is an online store specializing in selling IT-related products, including laptops, computer hardware, software, keyboards, chips, and other gadgets. It also offers services like system assembly, hardware repairs, operating system installation, virus removal, and technical support. The platform aims to provide a seamless shopping experience with a focus on high-quality tech products and professional IT services.",
     },
     {
       image: "/edufy.png",
       headings: "edufy website",
       link: "https://edufy-frontend-sooty.vercel.app/#/home",
       one: "CSS",
-      two: "Enhancing design with styling, responsiveness, and animations.",
+      two: "​Edufy is a comprehensive platform designed to assist students in tracking and celebrating their academic and professional milestones. It offers tools for recording achievements such as job interviews, placements, and applications for advanced studies. The platform provides an intuitive interface for easy navigation, allowing users to input and access their information effortlessly.Enhancing design with styling, responsiveness, and animations.",
     },
     {
       image: "/weather.png",
       headings: "weather App",
       link: "https://weather-app-nu-sooty.vercel.app/",
       one: "JavaScript",
-      two: "Adding interactivity and dynamic functionality to websites.",
+      two: "his is a simple weather application that allows users to check the current weather conditions. It also pulls weather data based on the user's location or a specified city, displaying key information such as temperature, humidity, and also a weather icon to represent current conditions of the location checked. The interface is minimalistic and straightforward, designed for quick and easy access to weather information.",
     },
   ];
 
@@ -259,6 +259,7 @@ These are the previously completed projects, they are created with different fra
         </a>
         <p className="text-sm">{portfolio.two}</p>
         </div>
+        <a className="flex underline text-end justify-end p-3" href={portfolio.link}> click here to view site </a>
       </div>
     ))}
   </div>
