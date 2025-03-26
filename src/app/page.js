@@ -163,9 +163,9 @@ export default function Home({params}) {
           {/* Images Section */}
           <section className=" w-1/2 flex justify-center items-center mx-auto md:mt-0">
             <img
-              src="/home_pic.png"
+              src="/hero.svg"
               alt="Isrealight"
-              className="w-full md:w-[300px]  rounded-lg  "
+              className="w-full md:w-[700px]  rounded-lg  "
             /> 
           </section>
               </div>
@@ -176,12 +176,16 @@ export default function Home({params}) {
             <h2 className="text-yellow-500 text-2xl md:text-4xl font-bold mb-4">About Us</h2>
           </div>
           <div className=" flex flex-col md:flex-row gap-2">
-            <div className="text-[#EFEDE8A6] p-2 text-center shadow-lg border border-yellow-500 rounded-lg text-lg md:text-xl w-1/2"> <p>
-              I am Isreal, a skilled full-stack developer specializing in Angular, React, Laravel, and Node.js. I build scalable, high-performance web applications with a focus on clean code, security, and seamless user experience. With expertise in API integration, authentication systems, and database management, I deliver efficient and maintainable solutions tailored to business needs.
-              </p>
+            <div className="text-[#EFEDE8A6] p-2 text-center shadow-lg  rounded-lg text-lg md:text-xl w-1/2"> 
+            <img
+              src="/Program.svg"
+              alt="Isrealight"
+              className="w-full md:w-[400px]  rounded-lg  "
+            /> 
               </div>
-            <div className="text-[#EFEDE8A6] p-2 shadow-lg border border-yellow-500 rounded-lg text-lg md:text-xl w-1/2"><p>
-              I am Isreal, a skilled full-stack developer specializing in Angular, React, Laravel, and Node.js. I build scalable, high-performance web applications with a focus on clean code, security, and seamless user experience. With expertise in API integration, authentication systems, and database management, I deliver efficient and maintainable solutions tailored to business needs.
+            <div className="text-[#EFEDE8A6] p-2 shadow-lg  rounded-lg text-lg md:text-xl w-1/2">
+            <p>
+              I am Isreal, a skilled frontend developer specializing in various libraries and frameworks. I build scalable, high-performance web applications with a focus on clean code, security, and seamless user experience. With expertise in API integration, authentication systems, and database management, I deliver efficient and maintainable solutions tailored to business needs.
               </p>
               </div>
           </div>
@@ -368,8 +372,14 @@ These are the previously completed projects, they are created with different fra
             <h2 className="text-4xl font-semibold text-white text-center mb-6">
               Contact Us
             </h2>
-            <p className="text-lg text-[#EFEDE8A6] text-center mb-8">
-              Send your message, feed back, or you can contact us via whatsApp
+            <p className="text-lg text-white text-center mb-2">contact us via</p>
+            <ul className="text-lg text-white text-center mb-8">
+              <li>Whatsapp:  +234 906 891 8017</li>
+              <li>Email: adebayooluwaferanmi112@gmail.com</li>
+            </ul>
+            <p className="text-lg text-white text-center mb-2">OR</p>
+            <p className="text-lg text-white text-center mb-8">
+              Send your message, feed back, or request here. 
             </p>
             <form  onSubmit={handleSubmit}
              className="flex flex-col md:flex-row gap-2 max-w-6xl mx-auto">
