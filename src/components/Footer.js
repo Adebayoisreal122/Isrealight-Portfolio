@@ -4,7 +4,7 @@ import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 export default function Footer() {
     return (
         <>
-            <footer className="bg-gray-800 text-white py-12 px-6 md:px-12">
+            <footer className="bg-gray-800 text-center text-white py-12 px-6 md:px-12">
       <div className="container mx-auto">
         {/* Grid Layout */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -21,7 +21,7 @@ export default function Footer() {
                         IGHT
                       </Link>
             <p className="text-gray-200 mt-4">
-              Empowering you to achieve your fitness goals, one step at a time.
+            Crafting Modern Websites with Performance in Mind. A passionate developer dedicated  to collaborate in creating or creating fast, responsive, and visually stunning websites that exceed your expectations.
             </p>
           </div>
 
@@ -31,23 +31,56 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link href="/" className="text-gray-200 hover:text-yellow-500 transition-colors">
-                  Home
+                  Back to top
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="text-gray-200 hover:text-yellow-500 transition-colors">
-                  About Us
-                </Link>
+              <button
+              onClick={() => {
+                document
+                  .getElementById("about")
+                  ?.scrollIntoView({ behavior: "smooth" });
+              }}
+              className="text-gray-200 hover:text-yellow-500 transition-colors"
+            >
+              About Us
+            </button>
               </li>
               <li>
-                <Link href="/portfolio" className="text-gray-200 hover:text-yellow-500 transition-colors">
-                  Portfolios
-                </Link>
+              <button
+              onClick={() => {
+                document
+                  .getElementById("portfolios")
+                  ?.scrollIntoView({ behavior: "smooth" });
+              }}
+              className="text-gray-200 hover:text-yellow-500 transition-colors"
+            >
+              portfolios
+            </button>
               </li>
               <li>
-                <Link href="/contact" className="text-gray-200 hover:text-yellow-500 transition-colors">
-                  Contact
-                </Link>
+              <button
+              onClick={() => {
+                document
+                  .getElementById("contact")
+                  ?.scrollIntoView({ behavior: "smooth" });
+              }}
+              className="text-gray-200 hover:text-yellow-500 transition-colors"
+            >
+              Contact Us
+            </button>
+              </li>
+              <li>
+              <button
+              onClick={() => {
+                document
+                  .getElementById("services")
+                  ?.scrollIntoView({ behavior: "smooth" });
+              }}
+              className="text-gray-200 hover:text-yellow-500 transition-colors"
+            >
+              Our Services
+            </button>
               </li>
             </ul>
           </div>
