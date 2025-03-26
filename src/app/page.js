@@ -15,58 +15,82 @@ export default function Home({params}) {
       image: "/Html.png",
       headings: "HTML",
       one: "HTML",
-      two: "Our community is growing fast",
+      two: "The backbone of web pages, providing structure and content.",
     },
     {
       image: "/css.png",
       headings: "CSS",
-      one: "HTML",
-      two: "Our community is growing fast",
+      one: "CSS",
+      two: "Enhancing design with styling, responsiveness, and animations.",
     },
     {
       image: "/javaScript.png",
       headings: "JavaScript",
-      one: "HTML",
-      two: "Our community is growing fast",
+      one: "JavaScript",
+      two: "Adding interactivity and dynamic functionality to websites.",
     },
     {
        image: "/react.svg",
       headings: "React",
-      one: "Year Experience",
-      two: "Experience in various workouts",
+      one: "React",
+      two: "Building fast and scalable user interfaces with component-based architecture.",
     },
     {
        image: "/Angular.svg",
       headings: "Angular",
-      one: "Certified Trainers",
-      two: "Guidance at every step.",
+      one: "Angular",
+      two: "A powerful framework for developing dynamic and enterprise-level applications.",
     },
     {
       image: "/vue.svg",
      headings: "Vue",
-     one: "Certified Trainers",
-     two: "Guidance at every step.",
+     one: "Vue",
+     two: "A flexible and progressive framework for creating interactive UIs and SPAs.",
    },
     {
        image: "/next.svg",
       headings: "NextJs",
-      one: "Customer Satisfaction",
-      two: "We ensure your progress satisfaction",
+      one: "NextJs",
+      two: "A React framework optimized for SEO, server-side rendering, and performance.",
     },
   ];
 
-  const programs = [
+  const portfolios = [
+    {
+      image: "/ectreme.png",
+      headings: "extreme website",
+      link: "https://extreme-tau.vercel.app/",
+      one: "HTML",
+      two: "The backbone of web pages, providing structure and content.",
+    },
+    {
+      image: "/edufy.png",
+      headings: "edufy website",
+      link: "https://edufy-frontend-sooty.vercel.app/#/home",
+      one: "CSS",
+      two: "Enhancing design with styling, responsiveness, and animations.",
+    },
+    {
+      image: "/weather.png",
+      headings: "weather App",
+      link: "https://weather-app-nu-sooty.vercel.app/",
+      one: "JavaScript",
+      two: "Adding interactivity and dynamic functionality to websites.",
+    },
+  ];
+
+  const services = [
     {
       title: "Website Development",
-      description: "Custom Websites (Business, Portfolio, Blog, etc.), Responsive & Mobile-Friendly Design, Frontend & Backend Development.",
+      description: "Custom Websites (Business, Portfolio, Blog, etc.), Responsive & Mobile-Friendly Design.",
     },
     {
       title: "Web App Development",
-      description: "Single Page Applications (SPA), Full-Stack Development (React, Vue, Next.js + Node.js, Laravel, etc.), API Development & Integration.",
+      description: "Single Page Applications (SPA), FrontEnd Development (React, Vue, Next.js, js, Angular, etc.), API Integration.",
     },
     {
       title: "E-commerce Development",
-      description: "Custom Online Stores (Shopify, WooCommerce, Laravel, etc.), Payment Gateway Integration, Shopping Cart Development.",
+      description: "Custom Online Stores (Shopify, WooCommerce, Laravel, etc.), Shopping Cart Development.",
     },
     {
       title: "SEO & Performance Optimization",
@@ -129,9 +153,9 @@ export default function Home({params}) {
               ADEBAYO ISREAL
             </h1>
             <p className="text-[18px] md:text-[20px] text-[#EFEDE8A6] mb-8">
-              A Website Developer 
+              A Frontend Website Developer 
             </p>
-            <button className="bg-[#EC7807] text-black px-8 py-3 rounded-lg text-lg font-semibold hover:bg-[#ec7907d5] transition-colors">
+            <button className="bg-yellow-500 text-black px-8 py-3 rounded-lg text-lg font-semibold hover:bg-orange-500 transition-colors">
               Contact Us
             </button>
           </section>
@@ -152,11 +176,11 @@ export default function Home({params}) {
             <h2 className="text-yellow-500 text-2xl md:text-4xl font-bold mb-4">About Us</h2>
           </div>
           <div className=" flex flex-col md:flex-row gap-2">
-            <div className="text-[#EFEDE8A6] p-2 text-center shadow-lg border border-[#EC7807] rounded-lg text-lg md:text-xl w-1/2"> <p>
+            <div className="text-[#EFEDE8A6] p-2 text-center shadow-lg border border-yellow-500 rounded-lg text-lg md:text-xl w-1/2"> <p>
               I am Isreal, a skilled full-stack developer specializing in Angular, React, Laravel, and Node.js. I build scalable, high-performance web applications with a focus on clean code, security, and seamless user experience. With expertise in API integration, authentication systems, and database management, I deliver efficient and maintainable solutions tailored to business needs.
               </p>
               </div>
-            <div className="text-[#EFEDE8A6] p-2 shadow-lg border border-[#EC7807] rounded-lg text-lg md:text-xl w-1/2"><p>
+            <div className="text-[#EFEDE8A6] p-2 shadow-lg border border-yellow-500 rounded-lg text-lg md:text-xl w-1/2"><p>
               I am Isreal, a skilled full-stack developer specializing in Angular, React, Laravel, and Node.js. I build scalable, high-performance web applications with a focus on clean code, security, and seamless user experience. With expertise in API integration, authentication systems, and database management, I deliver efficient and maintainable solutions tailored to business needs.
               </p>
               </div>
@@ -167,13 +191,12 @@ export default function Home({params}) {
           {specialization.map((achievement, index) => (
             <div
             key={index}
-            className="flex flex-col items-center justify-center text-center p-6 rounded-lg shadow-lg w-full sm:w-[45%] lg:w-[22%] border border-[#EC7807]"
+            className="flex flex-col items-center justify-center text-center p-6 rounded-lg shadow-lg w-full sm:w-[45%] lg:w-[22%] border border-yellow-500"
             >
                 <img src={achievement.image} alt={achievement.one} style={{ width: "100px", height: "100px" }} />
-              <h1 className="text-3xl font-bold text-[#EC7807] mb-2">
+              <h1 className="text-3xl font-bold text-yellow-500 mb-2">
                 {achievement.headings}
               </h1>
-              <p className="text-sm mb-2">{achievement.one}</p>
               <p className="text-sm">{achievement.two}</p>
             </div>
           ))}
@@ -192,16 +215,16 @@ These are the previously completed projects, they are created with different fra
           </div>
 
           <div className="flex flex-wrap gap-3 justify-center ">
-            {programs.map((program, index) => (
+            {services.map((service, index) => (
               <div
                 key={index}
                 className=" rounded-lg p-6 w-80 shadow-lg hover:shadow-xl transition-shadow duration-300"
               >
                 <h3 className="text-xl font-semibold text-white mb-4">
-                  {program.title}
+                  {service.title}
                 </h3>
                 <p className="text-[#EFEDE8A6] text-sm">
-                  {program.description}
+                  {service.description}
                 </p>
               </div>
             ))}
@@ -221,73 +244,24 @@ These are the previously completed projects, they are created with different fra
           </div>
 
           {/* <!-- Cards Section --> */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* <!-- Card 1 --> */}
-            <div className="p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-xl border-2 border-[#EC7807]">
-              <h4 className="text-xl font-semibold text-[#EC7807] mb-4">
-                Join for Free
-              </h4>
-              <p className="text-lg text-[#EFEDE8A6] mb-6">
-                Reach your fitness goals or maintain your healthy lifestyle with
-                professional training and support from a positive and active
-                online community.
-              </p>
-              <ul className="list-disc pl-6 text-white space-y-2">
-                <li>600 Full-Length Workout Video</li>
-                <li>Customizable Calendar</li>
-                <li>Health Recipes</li>
-                <li>Health and Fitness Articles</li>
-                <li>Positive and Supportive Online Community</li>
-                <li>No Credit Card Needed</li>
-              </ul>
-            </div>
-
-            {/* <!-- Card 2 --> */}
-            <div className=" p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-xl border-2 border-[#EC7807]">
-              <h4 className="text-xl font-semibold text-[#EC7807] mb-4">Advance</h4>
-              <p className="text-lg text-[#EFEDE8A6] mb-6">
-                Yanyan Plus includes everything you get with a free membership
-                and adds brand new convenience features, fitness tools, and
-                unique content.
-              </p>
-              <ul className="list-disc pl-6 text-white space-y-2">
-                <li>Ads-Free Website and Videos</li>
-                <li>Surprise Me Workout Selection Tool</li>
-                <li>Statistics for Your Activities</li>
-                <li>Enter and Track Custom Workouts</li>
-                <li>FB Plus Exclusive Workouts</li>
-                <li>Trackers to See Your Progress</li>
-                <li>FBI Plus Content and Challenges</li>
-                <li>Video Tags</li>
-                <li>FB Plus Routines</li>
-                <li>Rest Day Complete</li>
-              </ul>
-            </div>
-
-            {/* <!-- Card 3 --> */}
-            <div className=" p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-xl border-2 border-[#EC7807]">
-              <h4 className="text-xl font-semibold text-[#EC7807] mb-4">
-                Professional
-              </h4>
-              <p className="text-lg text-[#EFEDE8A6] mb-6">
-                Yanyan Plus includes everything you get with a free membership
-                and adds brand new convenience features, fitness tools, and
-                unique content.
-              </p>
-              <ul className="list-disc pl-6 text-white space-y-2">
-                <li>Ads-Free Website and Videos</li>
-                <li>Surprise Me Workout Selection Tool</li>
-                <li>Statistics for Your Activities</li>
-                <li>Enter and Track Custom Workouts</li>
-                <li>FB Plus Exclusive Workouts</li>
-                <li>Trackers to See Your Progress</li>
-                <li>FBI Plus Content and Challenges</li>
-                <li>Video Tags</li>
-                <li>FB Plus Routines</li>
-                <li>Rest Day Complete</li>
-              </ul>
-            </div>
-          </div>
+          <div className="flex flex-wrap justify-center gap-4"> 
+    {portfolios.map((portfolio, index) => (
+      <div
+        key={index}
+        className=" rounded-lg shadow-lg w-full sm:w-[45%]  border border-yellow-500"
+      >
+        <div>
+        <img src={portfolio.image} alt={portfolio.one} className="mb-4"  />
+        </div>
+        <div className="flex flex-col items-center justify-center px-3">
+        <a href={portfolio.link} className="text-3xl font-bold text-yellow-500 hover:text-orange-500 mb-2">
+          {portfolio.headings}
+        </a>
+        <p className="text-sm">{portfolio.two}</p>
+        </div>
+      </div>
+    ))}
+  </div>
         </section>
 
         {/* Why choose us */}
