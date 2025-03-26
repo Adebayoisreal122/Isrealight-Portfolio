@@ -24,7 +24,7 @@ export default function Home({params}) {
       two: "Enhancing design with styling, responsiveness, and animations.",
     },
     {
-      image: "/javaScript.png",
+      image: "/js.png",
       headings: "JavaScript",
       one: "JavaScript",
       two: "Adding interactivity and dynamic functionality to websites.",
